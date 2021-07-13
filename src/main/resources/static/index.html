@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>24Security</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+
+    <div class="header">
+        
+        <div class="header-right">
+            <img src="logo.png" alt="24Security Logo">
+        </div>
+      </div> 
+
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img_avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+    <div class="Planos">
+        <img src="Plano1.jpg" alt="24Security Low-cost" width="600" height="400">
+        <div class="desc"><br>Descrição: Plano Low-Cost, dispomos de um alarme caseiro com sensores de movimento. 
+            Se Ativado, irá ser reencaminhado um carro da 24Security para avriguar a situação.<br>
+            <br>Contrato mínimo de 6 meses com possibilidade de renovação.<br>
+            <br>Preço: 50/mês.</div>
+      </div>
+
+      <div class="Planos">
+        <img src="Plano2.jpg" alt="24Security Medium-price" width="600" height="400">
+        <div class="desc"><br>Descrição: Plano Medium-price, garante 2 camêras de vigilância com vigilância por parte da nossa equipa
+            durante 6 h por dia.<br>
+            <br>Contrato mínimo de 6 meses com possibilidade de renovação.<br>
+            <br>preço: 125/mês</div>
+      </div>
+
+      <div class="Planos">
+        <img src="Plano3.jpg" alt="24Security Premium" width="600" height="400">
+        <div class="desc"><br>Descrição: Plano Premium, garante 4 camêras de vigilância com vigilância 24/7 por parte da nossa equipa. Incluí
+            também alarme caseiro, com sensores de movimento.<br>
+            <br>Contrato mínimo de 6 meses com possibilidade de renovação.<br>
+            <br>preço: 220/mês</div>
+      </div>
+
+      <div class="Planos">
+        <img src="Plano4.jpg" alt="24Security Best Offer" width="600" height="400">
+        <div class="desc"><br>Descrição: Plano-Oferta, garante 2 camêras de vigilância com registos por vídeo caso haja algum ocorrido. Incluí
+            também alarme caseiro, com sensores de movimento.<br>
+            <br>Contrato mínimo de 12 meses com possibilidade de renovação.<br>
+            <br>preço: 115/mês</div>
+      </div>
+</body>
+</html>

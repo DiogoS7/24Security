@@ -1,21 +1,46 @@
 package pt.iade.Security24.models;
 
-import java.sql.Date;
-
 public class Administrador {
 
-    private int AdministradorID;
+    public int AdministradorID;
     private String Nome;
     private String Email;
     private String NomeUtilizador;
     private String Password;
-    private Date DataNascimento;
+    private String DataNascimento;
 
-    public int getUtilizadorID() {
-        return UtilizadorID;
+    public int getAdministradorID() {
+        return AdministradorID;
     }
-    
-    public int getPlanoID() {
-        return PlanoID;
+
+    public String getNome() {
+        return Nome;
     }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public String getNomeUtilizador() {
+        return NomeUtilizador;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public String getDataNascimento() {
+        return DataNascimento;
+    }
+
+    public Administrador(int administradorID, String nome, String email, String nomeUtilizador, String password,
+            String dataNascimento) {
+        AdministradorID = administradorID;
+        Nome = nome;
+        Email = email;
+        NomeUtilizador = nomeUtilizador;
+        Password = password;
+        DataNascimento = dataNascimento;
+    }
+
 }

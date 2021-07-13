@@ -2,10 +2,10 @@ package pt.iade.Security24.models;
 
 public class Planos implements Security24 {
     
-    public double Preço;
+    public double Preco;
     public String Nome;
-    public int Duração;
-    public String Descrição;
+    public String Duracao;
+    public String Descricao;
     protected int PlanoID;
 
     @Override
@@ -15,7 +15,7 @@ public class Planos implements Security24 {
 
     @Override
     public void getLucroTotal() {
-
+        
     }
 
     @Override
@@ -28,6 +28,14 @@ public class Planos implements Security24 {
     public int getUtilizadorID() {
 
         return 0;
+    }
+
+    public Planos(double preco, String nome, String duracao, String descricao, int planoID) {
+        Preco = preco;
+        Nome = nome;
+        Duracao = duracao;
+        Descricao = descricao;
+        PlanoID = planoID;
     }
     
 }
